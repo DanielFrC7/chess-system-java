@@ -1,11 +1,14 @@
 package application;
 
-import boadgame.Position;
+
+import chess.ChessMatch;
+
 
 public class Program {
 	public static void main(String[]agrs ) {
 		
-		Position pos = new Position(3 , 5);
-		System.out.println(pos);
+		ChessMatch chessMatch = new ChessMatch();
+		UI.printBoard(chessMatch.getPiece());
+		
 	}
 }
